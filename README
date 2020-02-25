@@ -1,0 +1,14 @@
+Feature: System rejects wrong login and password
+
+Scenario: User enter wrong login and password and system rejects Given Loginpage Then Wrong login "WrongPassword1234!@gmail.com" Then Wrong password "WrongPassword1234!" Then Click on login button Then Verify "Invalid username or password" sign is here
+
+Preconditions:
+Runnable on: Windows 10 Browser: Chrome Tools: Java, Selenium Webdriver
+
+Testcase steps:
+
+Go to https://honorlock.instructure.com/login/canvas
+Input wrong login "WrongPassword1234!@gmail.com".
+Input wrong password "WrongPassword1234!".
+Click on login button.
+Verify "Invalid username or password" pop-up is here.
